@@ -141,10 +141,16 @@ input[type=submit], input[type=button], button, a.button {
   border-radius: 0;
 }
 
-input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:focus {
+input[disabled]:hover {
+  cursor:not-allowed
+}
+
+input[type=submit]:hover:enabled, input[type=submit]:focus, input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:focus {
   color: #fff;
   background-color: #00a0d8;
 }
+
+
 /* /Buttons */
 
 /* Custom Scroll */
@@ -1108,11 +1114,12 @@ ul.social-links li:last-child a {
   color: #888;
 }
 
-.fun-fact-block .fun-value {
-  font-size: 24px;
+
+.fun-fact-block .fun-value{
+  font-size: 18px;
   font-weight: 300;
   display: block;
-  margin: 10px 0;
+  margin: 18px 0;
   color: #00a0d8;
 }
 /* /Fun Facts */
@@ -2196,3 +2203,7 @@ ul.social-links li:last-child a {
   background-color: #fff;
 }
 /* /Header Main Color BG */
+
+.disabled {
+  background: #ccc;
+}
